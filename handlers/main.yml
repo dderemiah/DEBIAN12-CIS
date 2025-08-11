@@ -199,7 +199,7 @@
     name: postfix
     state: restarted
 
-- name: Reload dconf
+- name: Update dconf
   ansible.builtin.command: dconf update
   changed_when: true
 
