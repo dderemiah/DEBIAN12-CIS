@@ -1,8 +1,21 @@
 # Changes to DEB12CIS
 
-## 1.2.0 Based on CIS v1.1.0
+## Based on CIS v1.1.0
+
+Oct25_updated
+
+workflow updates
+audit template updates
+#96 thanks to @dvic and @tomtrix
+#98 and #99 thanks to @dderemiah
+#101 thanks to @avest
+pre-commit updates
+Readme updates
+
+#92 thanks to @Arvyr
 
 July 2025 QA Updates
+  - #86 thanks to @polski-g
   - Fix for #89 and #90, thank you @Arvyr
 
 June 2025 QA Updates
