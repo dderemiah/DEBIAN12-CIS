@@ -81,7 +81,7 @@
         user: "{{ deb12cis_aide_cron_user }}"
         minute: "{{ deb12cis_aide_cron_minute }}"
         hour: "{{ deb12cis_aide_cron_hour }}"
-        day: "{{ ddeb12cis_aide_cron_day }}"
+        day: "{{ deb12cis_aide_cron_day }}"
         month: "{{ deb12cis_aide_cron_month }}"
         weekday: "{{ deb12cis_aide_cron_weekday }}"
         job: "{{ deb12cis_aide_cron_job }}"
