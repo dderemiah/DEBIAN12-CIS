@@ -76,6 +76,9 @@ run_audit: false
 # Run heavy tests - some tests can have more impact on a system enabling these can have greater impact on a system
 audit_run_heavy_tests: true
 
+# Ability to limit the number of concurrent processes used by goss (default 50)
+audit_max_concurrent: 50
+
 ## Only run Audit do not remediate
 audit_only: false
 
@@ -1353,6 +1356,12 @@ deb12cis_auditd_uid_exclude:
 # Example:
 deb12cis_auditd_extra_conf:
   admin_space_left: '10%'
+
+# 6.3.3.6 exclude listed mountpoints from the find command to locate privileged binaries
+# Allows operator to exclude mounted devices from being considered as within scope to find privileged binaries; mainly in the case of
+# external/temporary mounted USB drives.
+#   deb12cis_priv_command_excluded_mounts: ["/mnt/backup_disk", "/mnt/usb_external_storage"]
+deb12cis_priv_command_excluded_mounts: []
 
 # Section 7 Vars
 
