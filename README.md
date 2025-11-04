@@ -2,7 +2,7 @@
 
 ## Configure a DEBIAN 12 machine to be [CIS](https://www.cisecurity.org/cis-benchmarks/) compliant
 
-### Based on [CIS RedHat Enterprise DEBIAN 12 Benchmark v1.1.0](https://www.cisecurity.org/cis-benchmarks/)
+### Based on [CIS DEBIAN 12 Benchmark v1.1.0](https://www.cisecurity.org/cis-benchmarks/)
 
 ---
 
