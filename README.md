@@ -1,8 +1,8 @@
-# Debian 12 CIS
+# DEBIAN 12 CIS
 
-## Configure a Debian 12 machine to be [CIS](https://www.cisecurity.org/cis-benchmarks/) compliant
+## Configure a DEBIAN 12 machine to be [CIS](https://www.cisecurity.org/cis-benchmarks/) compliant
 
-### Based on [CIS Debian 12 Benchmark v1.1.0](https://www.cisecurity.org/cis-benchmarks/)
+### Based on [CIS RedHat Enterprise DEBIAN 12 Benchmark v1.1.0](https://www.cisecurity.org/cis-benchmarks/)
 
 ---
 
@@ -19,7 +19,6 @@
 
 ## Lint & Pre-Commit Tools 🔧
 
-[![Pre-Commit.ci](https://img.shields.io/endpoint?url=https://ansible-lockdown.github.io/github_linux_IaC/badges/DEBIAN12-CIS/pre-commit-ci.json)](https://results.pre-commit.ci/latest/github/ansible-lockdown/DEBIAN12-CIS/devel)
 ![YamlLint](https://img.shields.io/badge/yamllint-Present-brightgreen?style=flat&logo=yaml&logoColor=white)
 ![Ansible-Lint](https://img.shields.io/badge/ansible--lint-Present-brightgreen?style=flat&logo=ansible&logoColor=white)
 
@@ -49,7 +48,6 @@
 ![Private Benchmark Version](https://img.shields.io/endpoint?url=https://ansible-lockdown.github.io/github_linux_IaC/badges/Private-DEBIAN12-CIS/benchmark-version.json)
 
 [![Private Remediate Pipeline](https://img.shields.io/endpoint?url=https://ansible-lockdown.github.io/github_linux_IaC/badges/Private-DEBIAN12-CIS/remediate.json)](https://github.com/ansible-lockdown/Private-DEBIAN12-CIS/actions/workflows/main_pipeline_validation.yml)
-[![Private GPO Pipeline](https://img.shields.io/endpoint?url=https://ansible-lockdown.github.io/github_linux_IaC/badges/Private-DEBIAN12-CIS/gpo.json)](https://github.com/ansible-lockdown/Private-DEBIAN12-CIS/actions/workflows/main_pipeline_validation_gpo.yml)
 
 ![Private Pull Requests](https://img.shields.io/endpoint?url=https://ansible-lockdown.github.io/github_linux_IaC/badges/Private-DEBIAN12-CIS/prs.json)
 ![Private Closed Issues](https://img.shields.io/endpoint?url=https://ansible-lockdown.github.io/github_linux_IaC/badges/Private-DEBIAN12-CIS/issues-closed.json)
@@ -58,9 +56,9 @@
 
 ## Looking for support? 🤝
 
-[Lockdown Enterprise](https://www.lockdownenterprise.com#GH_AL_DEBIAN12_CIS)
+[Lockdown Enterprise](https://www.lockdownenterprise.com#GH_AL_DEBIAN12-CIS)
 
-[Ansible support](https://www.mindpointgroup.com/cybersecurity-products/ansible-counselor#GH_AL_DEBIAN12_CIS)
+[Ansible support](https://www.mindpointgroup.com/cybersecurity-products/ansible-counselor#GH_AL_DEBIAN12-CIS)
 
 ### Community 💬
 
@@ -95,7 +93,7 @@ Further details can be seen in the [Changelog](./ChangeLog.md)
 
 ## Matching a security Level for CIS
 
-It is possible to only run level 1 or level 2 controls for CIS.
+It is possible to to only run level 1 or level 2 controls for CIS.
 This is managed using tags:
 
 - level1-server
@@ -121,7 +119,7 @@ The control found in defaults main also need to reflect this as this control the
 
 **Technical Dependencies:**
 
-Debian 12 - Other versions are not supported.
+UBUNTU 22.04
 
 - Access to download or add the goss binary and content to the system if using auditing
 (other options are available on how to get the content to the system.)
@@ -166,10 +164,10 @@ default                    : ok=270  changed=23   unreachable=0    failed=0    s
 ## Documentation 📖
 
 - [Read The Docs](https://ansible-lockdown.readthedocs.io/en/latest/)
-- [Getting Started](https://www.lockdownenterprise.com/docs/getting-started-with-lockdown#GH_AL_DEB12_cis)
-- [Customizing Roles](https://www.lockdownenterprise.com/docs/customizing-lockdown-enterprise#GH_AL_DEB12_cis)
-- [Per-Host Configuration](https://www.lockdownenterprise.com/docs/per-host-lockdown-enterprise-configuration#GH_AL_DEB12_cis)
-- [Getting the Most Out of the Role](https://www.lockdownenterprise.com/docs/get-the-most-out-of-lockdown-enterprise#GH_AL_DEB12_cis)
+- [Getting Started](https://www.lockdownenterprise.com/docs/getting-started-with-lockdown#GH_AL_DEBIAN12_cis)
+- [Customizing Roles](https://www.lockdownenterprise.com/docs/customizing-lockdown-enterprise#GH_AL_DEBIAN12_cis)
+- [Per-Host Configuration](https://www.lockdownenterprise.com/docs/per-host-lockdown-enterprise-configuration#GH_AL_DEBIAN12_cis)
+- [Getting the Most Out of the Role](https://www.lockdownenterprise.com/docs/get-the-most-out-of-lockdown-enterprise#GH_AL_DEBIAN12_cis)
 
 
 ## Role Variables
