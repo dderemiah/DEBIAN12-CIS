@@ -93,7 +93,7 @@ Further details can be seen in the [Changelog](./ChangeLog.md)
 
 ## Matching a security Level for CIS
 
-It is possible to to only run level 1 or level 2 controls for CIS.
+It is possible to only run level 1 or level 2 controls for CIS.
 This is managed using tags:
 
 - level1-server
@@ -104,6 +104,7 @@ This is managed using tags:
 The control found in defaults main also need to reflect this as this control the testing that takes place if you are using the audit component.
 
 ---
+
 ## Requirements ✅
 
 **General:**
@@ -119,7 +120,7 @@ The control found in defaults main also need to reflect this as this control the
 
 **Technical Dependencies:**
 
-UBUNTU 22.04
+DEBIAN 12
 
 - Access to download or add the goss binary and content to the system if using auditing
 (other options are available on how to get the content to the system.)
@@ -169,7 +170,6 @@ default                    : ok=270  changed=23   unreachable=0    failed=0    s
 - [Per-Host Configuration](https://www.lockdownenterprise.com/docs/per-host-lockdown-enterprise-configuration#GH_AL_DEBIAN12_cis)
 - [Getting the Most Out of the Role](https://www.lockdownenterprise.com/docs/get-the-most-out-of-lockdown-enterprise#GH_AL_DEBIAN12_cis)
 
-
 ## Role Variables
 
 This role is designed that the end user should not have to edit the tasks themselves. All customizing should be done via the defaults/main.yml file or with extra vars within the project, job, workflow, etc.
@@ -181,17 +181,14 @@ There are many tags available for added control precision. Each control has its 
 ### Conversion Format for NIST References:
 
   1. Standard Prefix:
-
     - All references are prefixed with "NIST".
 
   2. Standard Types:
-
     - "800-53" references are formatted as NIST800-53.
     - "800-53r5" references are formatted as NIST800-53R5 (with 'R' capitalized).
     - "800-171" references are formatted as NIST800-171.
 
   3. Details:
-
     - Section and subsection numbers use periods (.) for numeric separators.
     - Parenthetical elements are separated by underscores (_), e.g., IA-5(1)(d) becomes IA-5_1_d.
     - Subsection letters (e.g., "b") are appended with an underscore.
@@ -207,7 +204,6 @@ Below is an example of the tag section from a control within this role. Using th
       - patch
       - rule_2.2.4
 ```
-
 
 ## Community Contribution 🧑‍🤝‍🧑
 
@@ -232,7 +228,6 @@ uses:
 
 Almalinux BaseOS, EPEL and many cloud providers repositories, do not allow gpgcheck(rule_1.2.1.2) or repo_gpgcheck (rule_1.2.1.3) this will cause issues during the playbook unless or a workaround is found.
 
-
 ## Local Testing 💻
 
 ### example
@@ -251,7 +246,6 @@ local testing uses:
 - molecule-podman 2.0.2
 - molecule-vagrant 1.0.0
 - molecule-azure 0.5.0
-
 
 ## Credits and Thanks 🙏
 
