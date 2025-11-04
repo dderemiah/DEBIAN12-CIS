@@ -23,7 +23,7 @@
 
 - name: "Remounting /tmp systemd"
   when: deb12cis_tmp_svc
-  ignore_errors: true
+  ignore_errors: true  # noqa: ignore-errors
   vars:
     mount_point: '/tmp'
   ansible.builtin.systemd:
