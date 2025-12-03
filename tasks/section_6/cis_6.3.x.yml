@@ -79,11 +79,11 @@
         name: Run AIDE integrity check
         cron_file: "{{ deb12cis_aide_cron_file }}"
         user: "{{ deb12cis_aide_cron_user }}"
-        minute: "{{ deb12cis_aide_cron_minute | default('0') }}"
-        hour: "{{ deb12cis_aide_cron_hour | default('5') }}"
-        day: "{{ ddeb12cis_aide_cron_day | default('*') }}"
-        month: "{{ deb12cis_aide_cron_month | default('*') }}"
-        weekday: "{{ deb12cis_aide_cron_weekday | default('*') }}"
+        minute: "{{ deb12cis_aide_cron_minute }}"
+        hour: "{{ deb12cis_aide_cron_hour }}"
+        day: "{{ deb12cis_aide_cron_day }}"
+        month: "{{ deb12cis_aide_cron_month }}"
+        weekday: "{{ deb12cis_aide_cron_weekday }}"
         job: "{{ deb12cis_aide_cron_job }}"
 
     - name: "6.3.2 | PATCH | Ensure filesystem integrity is regularly checked | aide service"

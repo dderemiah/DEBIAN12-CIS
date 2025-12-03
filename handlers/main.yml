@@ -22,6 +22,8 @@
   listen: "Remount /tmp"
 
 - name: "Remounting /tmp systemd"
+  when: deb12cis_tmp_svc
+  ignore_errors: true # noqa ignore-errors
   vars:
     mount_point: '/tmp'
   ansible.builtin.systemd:
@@ -156,7 +158,7 @@
     name: net.ipv4.route.flush
     value: '1'
     sysctl_set: true
-  ignore_errors: true  # noqa ignore-errors
+  ignore_errors: true # noqa ignore-errors
 
 - name: Sysctl flush ipv6 route table
   when:
@@ -206,7 +208,7 @@
 - name: Update-grub
   ansible.builtin.command: "update-grub"
   changed_when: true
-  ignore_errors: true  # noqa ignore-errors
+  ignore_errors: true # noqa ignore-errors
 
 - name: Reload ufw
   community.general.ufw:
